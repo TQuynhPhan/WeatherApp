@@ -17,13 +17,13 @@
             android:id="@+id/txtNgay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/txtTrangThaiNgay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:textSize="15sp"/>
 
     </LinearLayout>
 
@@ -39,20 +39,22 @@
             android:id="@+id/imgIcon"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txtTempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/txtTempMax"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:id="@+id/txtTempMin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_weight="1"/>
 
     </LinearLayout>

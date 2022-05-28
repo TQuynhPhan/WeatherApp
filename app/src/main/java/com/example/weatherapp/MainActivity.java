@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -71,11 +72,12 @@ public class MainActivity extends Activity {
         btnNgayTiep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String cityName=edtViTri.getText().toString();
+                String city=edtViTri.getText().toString();
+                //Toast.makeText(MainActivity.this, city, Toast.LENGTH_LONG).show();
 //                if(cityName.equals(""))
 //                    cityName="Saigon";
-                Intent intent=new Intent(MainActivity.this, NextDaysWeatherActivity.class);
-                intent.putExtra("cityName", cityName);
+                Intent intent=new Intent(MainActivity.this, NextDaysWeather.class);
+                intent.putExtra("cityName", city);
                 startActivity(intent);
             }
         });
